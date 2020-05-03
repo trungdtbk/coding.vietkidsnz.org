@@ -1,0 +1,178 @@
+@import "bootstrap-overrides.scss";
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&family=Roboto&display=swap);
+
+html, body {
+  background: rgb(0,0,0);
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(/images/bg.jpg);
+  background-repeat: repeat-y;
+  background-position: center top;  
+  background-size: auto 100%;
+
+  font-family: 'Open Sans', sans-serif;  
+}
+
+#landing-page {
+  color: rgb(255,255,255);
+  position: fixed;
+  top: 50%;
+  left: 50%;  
+  width: 80%;
+  height: 300px;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.h-3d {  
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  padding-top: 20px;
+  /* font: bold 52px Helvetica, Arial, Sans-Serif; */
+  text-shadow: 1px 1px #a59e9b,
+               2px 2px #a59e9b, 
+               3px 3px #a59e9b,
+               4px 4px #a59e9b,
+               5px 5px #a59e9b;
+}
+
+#top-navbar {
+  background-color: #2b3d6b;
+}
+
+#main-menu ul {
+  margin: 0 auto;
+}
+
+#main-menu span {
+  margin: 0 5px 0 5px;
+}
+
+#content-container {  
+  height: 100%;
+  width: 100%;  
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2em;
+  background: rgba(2244, 163, 46, 0.8);
+  padding: 10px;
+  color: rgb(41,235,35);
+  margin: 10px 0 10px 0;
+}
+
+.masonry-container {  
+  margin: 0 auto;
+}
+
+.masonry-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.masonry-item {
+  @extend .card;
+  width: 315px;
+  float: left;
+  margin-bottom: 10px;
+  padding: 1px;
+}
+
+.masonry-item a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: rgb(8, 18, 88);
+}
+
+.masonry-item:hover {
+  border: 4px solid rgb(0, 240, 0);
+  border-style: outset;  
+}
+
+.masonry-item-coverimg {
+  width: 100%;
+}
+
+.masonry-item-coverimg img {  
+  border-radius: 5px 5px 0 0;
+  min-width: 100%;
+  height: auto;
+}
+
+.masonry-item-action {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.masonry-item-body {
+  padding: 5px;
+}
+
+.masonry-item-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.masonry-item-text {
+  font-size: 0.9em;  
+}
+
+.masonry-item-small {
+  @extend .masonry-item;
+  width: 245px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;   
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100% !important;
+   height: 150% !important;
+   overflow: auto;
+}
+
+article {
+  margin-bottom: 15px;
+}
+
+.card {
+  padding: 0 10px 0 10px;
+}
+
+.card-body {
+  padding: 10px 0 10px 0;
+  margin: 0 0 10px 0;
+}
+
+.section-with-sidebar {
+  width: 60%;
+  float: left;
+}
+
+.sidebar {
+  min-height: 100vh;
+  float: right
+}

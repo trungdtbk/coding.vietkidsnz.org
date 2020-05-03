@@ -1,0 +1,37 @@
+{{ define "title" }}
+{{ .Title }}/{{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+
+<section class="container p-0 mt-2">
+  {{ $class := "col-lg-12" }}
+  {{ if not .Params.hidesidenav }}
+    {{ $class = "col-lg-9" }}
+  {{ end }}
+  <div class="row">
+    <div class="{{ $class }} mb-2">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          {{ if not .Params.hidetitle }} <h1 class="card-title">{{ upper .Title }}</h1> {{ end }}
+          {{ if not .Params.hidedate }} <h5 class="card-subtitle">{{ dateFormat "Jan 2, 2006" .Lastmod }}</h5> {{ end }}
+          <div class="card-text mt-1 border-top pt-4">
+            {{ .Content }}
+          </div>          
+        </div>
+      </div>
+    </div>    
+    {{ if not .Params.hidesidenav }}
+    <div class="col-lg-3">
+      
+      <div class="list-group">
+        {{ range .CurrentSection.Pages }}
+        <a href="{{ .Permalink }}" class="list-group-item list-group-item-action list-group-item-light border-0">{{ .Title }}</a>{{ end }}
+      </div>      
+    </div>
+    {{ end }}
+  </div>  
+</section>
+
+{{ end }}

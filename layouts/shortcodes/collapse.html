@@ -1,0 +1,7 @@
+{{ $id := now.Unix }}
+{{ $expand := default "false" (.Get 0) }}
+
+<a class="btn btn-info" data-toggle="collapse" role="button" href="#{{ $id }}" aria-expanded="{{ $expand }}">{{ .Get "text" | default "Click to see" }}</a>
+<div id="{{ $id }}" class="collapse">
+  {{ .Inner | markdownify }}
+</div>

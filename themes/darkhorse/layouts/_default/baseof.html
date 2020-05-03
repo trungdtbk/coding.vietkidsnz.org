@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">    
+
+    <script src="https://kit.fontawesome.com/747aa6f605.js" crossorigin="anonymous"></script>
+
+    <!-- Turn code blocks into Scratch block images -->
+    <script src="https://scratchblocks.github.io/js/scratchblocks-v3.4-min.js"></script>
+
+    <!-- main styles compiled from SCSS-->
+    {{ $styles := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+    <!-- Bootstrap JS & its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- Masonry layout -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="wrapper" class="container-xl">
+
+      <div id="top-navbar">
+        {{ partial "nav.html" .}}
+      </div>
+
+      <div id="header">
+        {{ block "header" .}}  {{ partial "header.html" }} {{ end }}
+      </div>
+
+      <div id="content-container">
+        {{ block "main" .}}
+        {{ end }}
+      </div>
+
+      <div id="footer">
+        {{ block "footer" .}}
+          {{ partial "footer.html" .}}
+        {{ end }}
+      </div>
+
+    </div>
+   
+    <script>
+      // Initialize Scratchblock render
+      scratchblocks.renderMatching("code", {inline: true});
+
+      // Menu item active/deactive depending on the current URL
+      $('a[href="' + this.location.pathname + '"]').parents('li,ul').addClass('active');
+
+      // Setup up masonry layoyt
+      $('.masonry-container').imagesLoaded(function() {
+      $('.masonry-container').masonry({
+        itemSelector: '.masonry-item',
+        gutter: 20
+        });
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{{ define "title" }}
+  {{ .Title }}/{{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+<section>
+
+  <div class="row">
+    <div class="col-md-9">
+      {{ range .Pages }}
+      <article class="card">
+        <h1>{{ .Title }}</h1>
+        <h5 class="card-subtitle">{{ dateFormat "Jan 2, 2006" .Lastmod }}</h5>
+        <div class="card-body">
+          {{ .Summary }}      
+          <a href="{{ .Permalink }}" class="d-block btn btn-info shadow w-25">See more</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+    <div class="col-md-3">
+      <div class="list-group">
+        {{ range .Pages }}
+          <a href="{{ .Permalink }}" class="list-group-item list-group-item-action">
+            {{ .Title }}
+          </a>        
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

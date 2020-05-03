@@ -1,0 +1,15 @@
+{{ $width := default 1600 (.Get "width") }}
+{{ $height := default 900 (.Get "height") }}
+
+<div class="iframe-container">
+  <iframe 
+    src="{{ .Get "src" }}" 
+    frameborder="0" marginheight="0" marginwidth="0"
+    {{ if .Get "allowfullscreen" }}allowfullscreen{{ end }}
+    scrolling=no
+    >
+
+    {{ .Inner }}
+
+  </iframe>
+</div>

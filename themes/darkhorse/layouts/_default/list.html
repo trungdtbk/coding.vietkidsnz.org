@@ -1,0 +1,30 @@
+{{ define "title" }}
+  {{ .Title }}/{{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+<section>
+
+  <h1 class="section-title">
+    {{ if not .Params.hidetitle }}    
+      {{ .Title }}
+    {{ end }}    
+  </h1>
+
+  <div class="masonry-container">
+    {{ range .Pages }}      
+    <div class="masonry-item">
+      <div class="masonry-item-coverimg">
+        {{ if .Params.coverimg }} <img src="{{ .Params.coverimg }}" alt="{{ .Title }}" width="100%" height="150"> {{ end }}
+      </div>
+      <div class="masonry-item-body">
+        <div class="masonry-item-action"><a href="{{ .Permalink }}">{{ upper .Title }}</a></div>
+      </div>      
+    </div>
+    {{ end }}
+  </div>
+
+</section>
+
+{{ end }}
