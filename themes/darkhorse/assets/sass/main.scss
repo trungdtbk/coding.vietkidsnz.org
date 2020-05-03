@@ -19,22 +19,25 @@ body {
   font-family: 'Open Sans', sans-serif;  
 }
 
-#landing-page {
-  color: rgb(255,255,255);
+#landing-page {  
   position: fixed;
   top: 50%;
   left: 50%;  
-  width: 80%;
-  height: 300px;
-  transform: translate(-50%, -55%);
+  width: 70%;  
+  transform: translate(-50%, -45%);
   text-align: center;
 }
 
+#landing-page a {
+  font-size: 3vh;
+  margin: 0 5px 0 5px;
+}
+
 .h-3d {  
-  font-size: 4em;
+  font-size: 7vh;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
-  color: white;
+  color: rgb(255,165,0);
   padding-top: 20px;
   /* font: bold 52px Helvetica, Arial, Sans-Serif; */
   text-shadow: 1px 1px #a59e9b,
