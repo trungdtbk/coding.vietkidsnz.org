@@ -6,7 +6,7 @@ tags: []
 level: 
 hidetitle: false
 hidedate: false
-hidesidenav: false
+hidesidenav: true
 coverimg:
 ---
 
