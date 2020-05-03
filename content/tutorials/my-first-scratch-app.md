@@ -1,7 +1,6 @@
 ---
 title: "My First Scratch App"
 date: 2020-03-01T20:20:31+12:00
-draft: true
 tags: []
 level: 
 hidetitle: false
