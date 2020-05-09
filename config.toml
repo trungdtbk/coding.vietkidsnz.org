@@ -28,10 +28,10 @@ enableemoji = true
         weight = 1
 
     [[menu.main]]
-        identifier = "projects"
+        identifier = "challenges"
         pre = "<i class='fas fa-laptop-code'></i>"
-        url = "/projects/"
-        name = "Projects"
+        url = "/challenges/"
+        name = "Challenges"
         weight = 2
 
 

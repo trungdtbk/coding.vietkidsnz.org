@@ -8,7 +8,7 @@
   {{ $size := len $pages }}
 
   <section>
-    <h1 class="section-title"> Current Projects </h1>
+    <h1 class="section-title"> Current Challenges </h1>
     <div class="masonry-container">
       {{ range first 3 $pages }}
       <a class="masonry-item" href="{{ .Permalink }}">
@@ -27,7 +27,7 @@
 
   {{ if gt (len $pages) 3 }}
   <section>
-    <h1 class="section-title"> Past Projects </h1>
+    <h1 class="section-title"> Past Challenges </h1>
     <div class="masonry-container">
       {{ range last (sub $size 3) $pages }}
       <a class="masonry-item masonry-item-small" href="{{ .Permalink }}">
