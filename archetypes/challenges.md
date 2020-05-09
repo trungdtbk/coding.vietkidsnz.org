@@ -10,7 +10,7 @@ hidesidenav: false
 coverimg:
 ---
 
-Short description of the project goes here...
+In this challenge, you will be making ...
 
 <!--more-->
 
