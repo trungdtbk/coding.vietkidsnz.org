@@ -13,7 +13,7 @@
   <div class="row">
     <div class="{{ $class }} mb-2">
       <div class="card" style="width: 100%;">
-        <div class="card-body">
+        <div class="card-body p-2">
           {{ if not .Params.hidetitle }} <h1 class="card-title">{{ upper .Title }}</h1> {{ end }}
           {{ if not .Params.hidedate }} <h5 class="card-subtitle">{{ dateFormat "Jan 2, 2006" .Lastmod }}</h5> {{ end }}
           <div class="card-text mt-1 border-top pt-4">
