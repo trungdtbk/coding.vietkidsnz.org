@@ -14,11 +14,9 @@ In this challenge, you will be making ...
 
 <!--more-->
 
-## Description
-
 ## Your Missions
 
-Complete all the Beginner missions and challenge yourself with the Expert missions.
+Start with begineer mission and move on to the expert ones if you dare. If you think you're already an expert, you can do the expert missions right away.
 
 ### Beginner
 
@@ -33,7 +31,9 @@ Complete all the Beginner missions and challenge yourself with the Expert missio
 
 ## Some Hints
 
-{{< collapse text="Try to do it first" >}}
+Some techniques you may need to use to complete this challenge.
+
+{{< collapse text="Try it yourself first" >}}
 
 1. hint 1
 2. hint 2
