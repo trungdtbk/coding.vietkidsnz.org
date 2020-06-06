@@ -57,7 +57,12 @@
    
     <script>
       // Initialize Scratchblock render
-      scratchblocks.renderMatching("code", {inline: true});
+      // function initScratchBlock() {
+        scratchblocks.renderMatching("p code", {inline: true});
+        scratchblocks.renderMatching("pre code", {inline: false});
+      // };
+
+      // document.onload = initScratchBlock;
 
       // Menu item active/deactive depending on the current URL
       $('a[href="' + this.location.pathname + '"]').parents('li,ul').addClass('active');

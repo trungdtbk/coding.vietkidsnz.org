@@ -18,6 +18,9 @@ enableemoji = true
     darkLinkColor = "darkseagreen"
     dark404Button = true
 
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
 
 [menu]
     [[menu.main]]
@@ -28,10 +31,10 @@ enableemoji = true
         weight = 1
 
     [[menu.main]]
-        identifier = "challenges"
+        identifier = "projects"
         pre = "<i class='fas fa-laptop-code'></i>"
-        url = "/challenges/"
-        name = "Challenges"
+        url = "/projects/"
+        name = "Projects"
         weight = 2
 
 
