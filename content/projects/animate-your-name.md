@@ -6,7 +6,7 @@ level: beginner/advance
 hidetitle: false
 hidedate: false
 hidesidenav: false
-coverimg: /images/challenges/animate-your-name.gif
+coverimg: /images/projects/animate-your-name.gif
 ---
 
 In this project, you gonna create an animation of your name in several ways, like spinning.
