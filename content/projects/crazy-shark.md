@@ -30,6 +30,7 @@ For now, think youself how you would do it. And do it as much as you can.
 You can break down the project into many small tasks, like this:
 
 1. Creat a fish and make it swim. Use the same technique you had for your name animation
+1. Make the fish swim back and forth between two edges.
 2. Create a shark and make it swim. Again, very similar way to the fish
 3. Make the fish disappear when it got eaten by the shark.
 4. Make it more fun by making the fish appears at random location when start
