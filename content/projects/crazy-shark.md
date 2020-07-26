@@ -9,7 +9,7 @@ hidesidenav: false
 coverimg: /images/projects/crazy-shark.png
 ---
 
-Can you create a shark that follows and eats any fish it can see?
+Can you create a shark that looks for fish and eats any fish it can see?
 
 
 <!--more-->
@@ -19,7 +19,7 @@ In this project, we continue practicing on how to use loops in Scratch.
 You will be creating...
 
 - A fish tank or ocean which has
-- two or more golden fish that swim arround
+- two or more fish that swim arround
 - a shark that swims toward those fish and eats when they meet
 
 It sounds hard, hah? Don't worry, we'll do it together in our next meetup.
