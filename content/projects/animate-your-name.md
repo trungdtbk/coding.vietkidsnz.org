@@ -41,7 +41,7 @@ Some techniques you may need to use to complete this challenge.
 
 Play with [this Scratch tutorial](https://scratch.mit.edu/projects/editor/?tutorial=name) to gain some experience.
 
-{{< collapse text="Try to do it first" >}}
+{{< collapse text="See how it's done" >}}
 
 ### Make it spin
 ```
