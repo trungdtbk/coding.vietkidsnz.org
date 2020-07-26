@@ -34,14 +34,14 @@ For instance, for beginner level, make your name gliding from the left to the ce
 
 Some techniques you may need to use to complete this challenge.
 
-{{< collapse text="Try to do it first" >}}
-
 1. You need blocks that change the look of the Sprite (see Tutorial - [Getting Started with Look blocks](/tutorials/getting-started-with-look-blocks))
 2. Use **loop blocks** to change from a look to another to create an animation (see Tutorial - [Working with Loops](/tutorials/working-with-loops)).
 3. To have multiple animations at the same time, use the **concurrency technique** (see [Getting Started with Concurrency](/tutorials/getting-started-with-concurrency))
 
 
 Play with [this Scratch tutorial](https://scratch.mit.edu/projects/editor/?tutorial=name) to gain some experience.
+
+{{< collapse text="Try to do it first" >}}
 
 ### Make it spin
 ```
