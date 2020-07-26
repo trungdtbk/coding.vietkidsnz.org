@@ -37,7 +37,7 @@ You can break down the project into many small tasks, like this:
 5. Make it interesting by adding more animations like: swirling reef...
 
 
-{{< collapse text="Try it yourself first" >}}
+{{< collapse text="See how it's done" >}}
 
 How do you create more than one fish? You can just create a fish Sprite and then duplicate it.
 Or a better way? Use the block `create clone of (myself v)`. For example:
