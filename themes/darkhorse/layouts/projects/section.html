@@ -7,16 +7,15 @@
   {{ $pages := .Pages.ByPublishDate.Reverse }}
   {{ $size := len $pages }}
 
-  <section>
-    <h1 class="section-title"> Current Projects </h1>
+  <section class="container">
     <div class="masonry-container">
-      {{ range first 3 $pages }}
+      {{ range $pages }}
       <a class="masonry-item" href="{{ .Permalink }}">
         <div class="masonry-item-coverimg">
           {{ if .Params.coverimg }} <img src="{{ .Params.coverimg }}" alt="{{ .Title }}" width="100%" height="150"> {{ end }}
         </div>
         <div class="masonry-item-body">
-          <h1 class="masonry-item-title"> {{ upper .Title }} [{{ .Params.level }}] </h1>
+          <h1 class="masonry-item-title"> {{ upper .Title }} </h1>
           <div class="masonry-item-text"> {{ .Params.description | default .Summary }} </div>          
         </div>
       </a>
@@ -24,23 +23,5 @@
     </div>
 
   </section>
-
-  {{ if gt (len $pages) 3 }}
-  <section>
-    <h1 class="section-title"> Past Projects </h1>
-    <div class="masonry-container">
-      {{ range last (sub $size 3) $pages }}
-      <a class="masonry-item masonry-item-small" href="{{ .Permalink }}">
-        <div class="masonry-item-coverimg">
-          {{ if .Params.coverimg }} <img src="{{ .Params.coverimg }}" alt="{{ .Title }}" width="100%" height="150"> {{ end }}
-        </div>
-        <div class="masonry-item-body">
-          <h1 class="masonry-item-title"> {{ upper .Title }} </h1>          
-        </div>
-      </a>
-      {{ end }}
-    </div>
-  </section>
-  {{ end }}
 
 {{ end }}
