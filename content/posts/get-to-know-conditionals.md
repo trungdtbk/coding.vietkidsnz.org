@@ -9,7 +9,7 @@ hidedate: false
 hidesidenav: false
 ---
 
-What the heck are conditionals? Bruh. Be patient. I'll introduce them to you. For now, think about something like `IF <I am tired> THEN I go to bed`.
+What the heck are conditionals? Bruh. Be patient. I'll introduce them to you. For now, think about something like `IF <I am tired> THEN I go to bed :: control`.
 
 <!--more-->
 # What are conditonals?
