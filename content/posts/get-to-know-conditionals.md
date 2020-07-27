@@ -9,11 +9,11 @@ hidedate: false
 hidesidenav: false
 ---
 
-What the heck are conditionals? Be patient. I'll introduce them to you. For now, think about something like `IF <I am tired> THEN I go to bed`.
+What the heck are conditionals? Bruh. Be patient. I'll introduce them to you. For now, think about something like `IF <I am tired> THEN I go to bed :: control`.
 
 <!--more-->
 # What are conditonals?
-In coding, conditionals are the way we use to tell our program what to do when a something (i.e. condition) is TRUE. Let take a look at an example below:
+In coding, conditionals are the way we use to tell our program what to do when something (i.e. condition) is TRUE. Lets take a look at an example below:
 ```
 if <it is going to rain> then
     switch costume to (raincoat)
@@ -21,7 +21,7 @@ else
     switch costume to (t-shirt)
 ```
 
-So what would happen? or what costume our Cat (or Sprite) would wear eventually? We don't know. But at least we know that the Cat wears a raincoat when it's raining.
+So what would happen? Or what costume our Cat (or Sprite) would wear eventually? We don't know. But at least we know that the Cat wears a raincoat when it's raining.
 
 In Scratch, there are two types of conditionals: 
 ```
@@ -40,11 +40,11 @@ else
 
 # Boolean conditions
 
-When I say `something is true`, it is called a boolean condition in coding. This is because it can be either **TRUE** or **FALSE** and nothing else.
-Let have some fun exercises, ok.
+When I say `something is true`, it is called a boolean condition in coding. This is because it can either be **TRUE** or **FALSE** and nothing else.
+Let have some fun exercises.
 
 Is `<(10) > (9)>` true or false? Too easy hah?
-How about `<<(10) > (11)> or <(12) < (13)>>`? Still too easy? Let do something harder. Take a look the below code:
+How about `<<(10) > (11)> or <(12) < (13)>>`? Still too easy? Lets do something harder. Take a look the below code:
 
 ```
 if <(score) < (4)> then
@@ -92,7 +92,7 @@ Can anyone tell what does the code do?
 
 # Conditional Operators
 
-Conditional Operators are blocks we use to create a condition, yeah a TRUE or FALSE thing. You can find them in the Operator blocks. Some of them are:
+Conditional Operators are blocks we use to create a condition - TRUE or FALSE thing. You can find them in the Operator blocks. Some of them are:
 `<<> and <>>`, `<<> or <>>` and `<not <>>`.
 The others are `<() > (10)>` or `<()=(10)>`.
 
